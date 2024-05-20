@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --pink: rgb(187, 39, 167);
+    --dark-pink: rgb(135, 16, 119);
+    --white: #fff;
+}
+
+
+
+
+.btn{
+    color: var(--white) !important;
+    border: none;
+    padding: .6rem 1rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-pink{
+    background: var(--pink) !important;
+}
+
+.btn:hover{
+    background-color: var(--dark-pink );
+}
+
+.full-btn{
+    width: 100%;
+    display: block;
+}
+
+
+.form{
+    border-radius: 8px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border: 1px solid #eee;
+    height: fit-content;
+    display: flex;
+    gap: 1rem;
+}
+
+.form>*{
+    border-bottom: 1px solid #eee;
+}
+
+.form input{
+    display: block;
+    width: 100%;
+}
+
+
+/* 
+====================
+====================
+PASTE LINK FORM
+====================
+====================
+*/
+
+.paste-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto ;
+}
+
+.paste-link .paste-link-form{
+    margin: 2rem auto;
+    width: 80vw;
+    max-width: inherit;
+    flex-direction: column;
+}
+
+.paste-link .paste-link-form>div{
+    border: 1px solid var(--pink);
+    margin: 1rem 0;
+    border-radius: 30px;
+    
+}
+
+.paste-link .paste-link-form input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    border-radius: inherit;
+}
+
+.paste-link .btn{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* 
+====================
+====================
+END OF PASTE LINK FORM
+====================
+====================
+*/
+
+
+
+/* 
+====================
+====================
+RESULT
+====================
+====================
+*/
+
+.result{
+    padding: 1rem;
+    margin: 1rem 0 2rem;
+    transition: display .5s ease;
+}
+
+.result-con{
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.result>h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+
+@media screen and (min-width: 780px) {
+    .result-con{
+        flex-direction: row;
+    }   
+}
+
+
+.result .edit-mp3-form{
+    flex-direction: column;
+}
+
+.result .edit-mp3-form input{
+    padding: .5rem 1rem;
+    border: solid 1px #eee;
+
+}
+
+.result .edit-mp3-form{
+    flex: .8;
+}
+
+.result .edit-mp3-form .btn{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+
+/* preview */
+.mp3-preview{
+    border: 1px solid #eee;
+    padding: 1rem;
+}
+
+.mp3-preview h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.mp3-preview>div{
+    margin-bottom: .5rem;
+    padding: .4rem 0;
+}
+
+.mp3-preview  h4{
+    margin: 1rem 0 0;
+}
+
+.mp3-preview .album-art .img{
+    width: 100%;
+    height: 300px;
+}
+
+.mp3-preview .album-art img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* 
+====================
+====================
+END OF RESULT
+====================
+====================
+*/
